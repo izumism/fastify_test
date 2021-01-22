@@ -15,7 +15,7 @@ run:
 		bash
 
 clean:
-	docker contianer rm -f $(container)
+	docker container rm -f $(container)
 
 bash:
 	docker exec -w /home/app -it $(container) bash
