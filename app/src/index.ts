@@ -12,10 +12,7 @@ server.get('/ping', async (request, reply) => {
   return 'pong\n'
 })
 
-server.get<{
-  Qeurystring: IQuerystringSchema,
-  Headers: IHeaderSchema
-}>('/auth', {
+server.get('/auth', {
     schema: {
       querystring: QuerystringSchema,
       headers: HeadersSchema
