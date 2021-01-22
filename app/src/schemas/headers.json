@@ -1,4 +1,5 @@
 {
+  "$id": "FastifyHeader",
   "$schema": "http://json-schema.org/draft/2019-09/schema#",
   "title": "Headers Schema",
   "type": "object",

@@ -1,4 +1,5 @@
 {
+  "$id": "FastifyQueryString",
   "$schema": "http://json-schema.org/draft/2019-09/schema#",
   "title": "Querystring Schema",
   "type": "object",
