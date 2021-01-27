@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "defs": {
+    "address": {
+      "title": "BaseAddressProps",
+      "type": "object",
+      "properties": {
+        "street_address": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string" }
+      },
+      "required": ["street_address", "city", "state"],
+			"additionalProperties": false
+    }
+  },
+  "title": "ShoppingAddress",
+  "type": "object",
+  "properties": {
+    "billing_address": { "$ref": "#/defs/address" },
+    "shipping_address": { "$ref": "#/defs/address" },
+		"phone_number": { "type": "string" }
+  },
+	"requiredProperties": ["billing_address", "shipping_address", "phone_number"],
+	"additionalProperties": false
+}
